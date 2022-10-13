@@ -16,7 +16,7 @@
 }
 
 .img-responsive {
-  width: 110px;
+  width: 200px;
   margin-top: -0.3125rem;
 }
 
@@ -59,7 +59,7 @@
   position: absolute;
   top: 100px;
   right: 50px;
-  z-index: 9999;
+  z-index: 999;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgba(85, 80, 80, 0.526);
 }
@@ -71,12 +71,14 @@
 .sub-nav a::after{
   background-color: #ff9f43;
 }
-
+.alert:empty{
+  display: none !important;
+}
 .sub-detail {
   position: absolute;
   top: 150px;
   right: 50px;
-  z-index: 9999;
+  z-index: 999;
   width: 290px;
   max-height: 400px;
   overflow: auto;

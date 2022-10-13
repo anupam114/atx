@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
-import Logo from "../Logo.png";
+import Logo from "../atx-logo-front.png";
 const Navigation = () => {
   return (
     <Navbar bg="primary" variant="dark" expand="lg" className="mr-auto">
@@ -19,23 +19,22 @@ const Navigation = () => {
             </Link>
 
             <NavDropdown title="Resource" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">
+              <NavDropdown.Item href="https://warncentraltexas.org/" target = '_blank'>
                 WarnCentralTexas
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
+              <NavDropdown.Item href="https://hydromet.lcra.org/coa/" target = '_blank'>
                 LCRA Austin Hydromet
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
-                {" "}
-                Austin FloodPro{" "}
+              <NavDropdown.Item href="https://maps.austintexas.gov/FloodPro/#/FloodProIntro/" target = '_blank'>
+                Austin FloodPro
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item href="https://txpub.usgs.gov/txwaterdashboard//" target = '_blank'>
                 USGS Texas Water Dashboard
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item href="https://atxfloodsafety.com/" target = '_blank'>
                 Flood Safety
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item href="/data-feed.xml" target = '_blank'>
                 Open Data Feed
               </NavDropdown.Item>
             </NavDropdown>

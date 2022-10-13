@@ -5,7 +5,7 @@ import DetailCard from "./DetailCard";
 const ClosoureMap = () => {
   const Icon = (state) => {
     return L.icon({
-      iconUrl: `/svg/${state}.png`,
+      iconUrl: `/static/svg/${state}.png`,
       iconSize: [20, 20],
       iconAnchor: [0, 0],
     });

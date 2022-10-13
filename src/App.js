@@ -23,7 +23,7 @@ const CrossingsMap = React.lazy(() => import("./components/CrossingsMap"));
 function App() {
   return (
     <Router>
-        <div className="App">
+      <div className="App">
         <Suspense fallback={<Spinners />}>
           <Navigation />
           <Routes>
@@ -55,8 +55,8 @@ function App() {
             <Route path="/privacy" element={<Privacy />} />
             <Route path="contact" element={<Contact />} />
           </Routes>
-          </Suspense>
-        </div>
+        </Suspense>
+      </div>
     </Router>
   );
 }

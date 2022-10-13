@@ -28,8 +28,7 @@ const ImagePreview = ({ images }) => {
         <i class="far fa-search-plus" onClick={handleShow}></i>
       </span>
 
-      <Modal centered show={show} onHide={handleClose}>
-        <Modal.Header closeButton></Modal.Header>
+      <Modal centered  size="xl" show={show} onHide={handleClose}>
         <Modal.Body>
           <Carousel>
             {images.map((image, index) => {

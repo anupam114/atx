@@ -6,7 +6,7 @@ const CamerasMap = () => {
 
   const Icon = () => {
     return L.icon({
-      iconUrl: `/svg/camera.png`,
+      iconUrl: `/static/svg/camera.png`,
       iconSize: [20, 20],
       iconAnchor: [0, 0],
     });
@@ -23,7 +23,7 @@ const CamerasMap = () => {
       let response = await fetch(url);
       let data = await response.json();
 
-      console.log(data)
+      // console.log(data)
 
       let map = L.map("map").setView([30.266666, -97.73333], 10);
       data.attributes.forEach((location, index) => {
